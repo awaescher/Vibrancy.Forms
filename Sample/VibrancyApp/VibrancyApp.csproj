@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.800" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\test.jpeg" />
+    <None Remove="Resources\test1.jpeg" />
+    <None Remove="Resources\test2.jpeg" />
+    <None Remove="Resources\test3.jpeg" />
+    <None Remove="Resources\test4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\test0.jpeg" />
+    <EmbeddedResource Include="Resources\test1.jpeg" />
+    <EmbeddedResource Include="Resources\test2.jpeg" />
+    <EmbeddedResource Include="Resources\test3.jpeg" />
+    <EmbeddedResource Include="Resources\test4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Vibrancy.Forms\Vibrancy.Forms.csproj" />
+  </ItemGroup>
+</Project>

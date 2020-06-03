@@ -39,6 +39,7 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="BlurViewRenderer.cs" />
+    <Compile Include="VibrancyForms.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
