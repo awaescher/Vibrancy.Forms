@@ -10,7 +10,7 @@
       <owners>Andreas Wäscher</owners>
       <projectUrl>https://github.com/awaescher/Vibrancy.Forms</projectUrl>
       <license type="file">LICENSE</license>
-      <icon>docs\Vibrancy.Forms.png</icon>
+      <icon>images\Vibrancy.Forms.png</icon>
       <requireLicenseAcceptance>false</requireLicenseAcceptance>
       <repository url="https://github.com/awaescher/Vibrancy.Forms" />
       <summary>Blur and Vibrancy effects for iOS and iPadOS with Xamarin.Forms</summary>
@@ -57,33 +57,34 @@ This package is designed to be used with iOS and iPadOS only and will not provid
     <files>
 
         <!--Net Standard-->
-        <file src="Vibrancy.Forms\Vibrancy.Forms\bin\Release\netstandard2.0\Vibrancy.Forms.dll" target="lib\netstandard2.0\Vibrancy.Forms.dll" />
-        <file src="Vibrancy.Forms\Vibrancy.Forms\bin\Release\netstandard2.0\Vibrancy.Forms.pdb" target="lib\netstandard2.0\Vibrancy.Forms.pdb" />
+        <file src="Vibrancy.Forms\bin\Release\netstandard2.0\Vibrancy.Forms.dll" target="lib\netstandard2.0\Vibrancy.Forms.dll" />
+        <file src="Vibrancy.Forms\bin\Release\netstandard2.0\Vibrancy.Forms.pdb" target="lib\netstandard2.0\Vibrancy.Forms.pdb" />
 
         <!--Xamarin.Android-->
-        <file src="Vibrancy.Forms\Vibrancy.Forms.Android\bin\Release\monoandroid10\Vibrancy.Forms.Android.dll" target="lib\MonoAndroid10\Vibrancy.Forms.Android.dll" />
-        <file src="Vibrancy.Forms\Vibrancy.Forms.Android\bin\Release\monoandroid10\Vibrancy.Forms.Android.pdb" target="lib\MonoAndroid10\Vibrancy.Forms.Android.pdb" />
-        <file src="Vibrancy.Forms\Vibrancy.Forms.Android\bin\Release\monoandroid10\Vibrancy.Forms.dll" target="lib\MonoAndroid10\Vibrancy.Forms.dll" />
-        <file src="Vibrancy.Forms\Vibrancy.Forms.Android\bin\Release\monoandroid10\Vibrancy.Forms.pdb" target="lib\MonoAndroid10\Vibrancy.Forms.pdb" />
+        <!-- <file src="Vibrancy.Forms.Android\bin\Release\monoandroid10\Vibrancy.Forms.Android.dll" target="lib\MonoAndroid10\Vibrancy.Forms.Android.dll" />
+        <file src="Vibrancy.Forms.Android\bin\Release\monoandroid10\Vibrancy.Forms.Android.pdb" target="lib\MonoAndroid10\Vibrancy.Forms.Android.pdb" />
+        <file src="Vibrancy.Forms.Android\bin\Release\monoandroid10\Vibrancy.Forms.dll" target="lib\MonoAndroid10\Vibrancy.Forms.dll" />
+        <file src="Vibrancy.Forms.Android\bin\Release\monoandroid10\Vibrancy.Forms.pdb" target="lib\MonoAndroid10\Vibrancy.Forms.pdb" /> -->
 
         <!--Xamarin.Android 10.0-->
-        <file src="Vibrancy.Forms\Vibrancy.Forms.Android\bin\Release\monoandroid10.0\Vibrancy.Forms.Android.dll" target="lib\MonoAndroid10.0\Vibrancy.Forms.Android.dll" />
-        <file src="Vibrancy.Forms\Vibrancy.Forms.Android\bin\Release\monoandroid10.0\Vibrancy.Forms.Android.pdb" target="lib\MonoAndroid10.0\Vibrancy.Forms.Android.pdb" />
-        <file src="Vibrancy.Forms\Vibrancy.Forms.Android\bin\Release\monoandroid10.0\Vibrancy.Forms.dll" target="lib\MonoAndroid10.0\Vibrancy.Forms.dll" />
-        <file src="Vibrancy.Forms\Vibrancy.Forms.Android\bin\Release\monoandroid10.0\Vibrancy.Forms.pdb" target="lib\MonoAndroid10.0\Vibrancy.Forms.pdb" />
+        <file src="Vibrancy.Forms.Android\bin\Release\monoandroid10.0\Vibrancy.Forms.Android.dll" target="lib\MonoAndroid10.0\Vibrancy.Forms.Android.dll" />
+        <file src="Vibrancy.Forms.Android\bin\Release\monoandroid10.0\Vibrancy.Forms.Android.pdb" target="lib\MonoAndroid10.0\Vibrancy.Forms.Android.pdb" />
+        <file src="Vibrancy.Forms.Android\bin\Release\monoandroid10.0\Vibrancy.Forms.dll" target="lib\MonoAndroid10.0\Vibrancy.Forms.dll" />
+        <file src="Vibrancy.Forms.Android\bin\Release\monoandroid10.0\Vibrancy.Forms.pdb" target="lib\MonoAndroid10.0\Vibrancy.Forms.pdb" />
 
         <!--Xamarin.iOS-->
-        <file src="Vibrancy.Forms\Vibrancy.Forms.iOS\bin\Release\Vibrancy.Forms.iOS.dll" target="lib\Xamarin.iOS10\Vibrancy.Forms.iOS.dll" />
-        <file src="Vibrancy.Forms\Vibrancy.Forms.iOS\bin\Release\Vibrancy.Forms.iOS.pdb" target="lib\Xamarin.iOS10\Vibrancy.Forms.iOS.pdb" />
-        <file src="Vibrancy.Forms\Vibrancy.Forms.iOS\bin\Release\Vibrancy.Forms.dll" target="lib\Xamarin.iOS10\Vibrancy.Forms.dll" />
-        <file src="Vibrancy.Forms\Vibrancy.Forms.iOS\bin\Release\Vibrancy.Forms.pdb" target="lib\Xamarin.iOS10\Vibrancy.Forms.pdb" />
+        <file src="Vibrancy.Forms.iOS\bin\Release\Vibrancy.Forms.iOS.dll" target="lib\Xamarin.iOS10\Vibrancy.Forms.iOS.dll" />
+        <file src="Vibrancy.Forms.iOS\bin\Release\Vibrancy.Forms.iOS.pdb" target="lib\Xamarin.iOS10\Vibrancy.Forms.iOS.pdb" />
+        <file src="Vibrancy.Forms.iOS\bin\Release\Vibrancy.Forms.dll" target="lib\Xamarin.iOS10\Vibrancy.Forms.dll" />
+        <file src="Vibrancy.Forms.iOS\bin\Release\Vibrancy.Forms.pdb" target="lib\Xamarin.iOS10\Vibrancy.Forms.pdb" />
 
         <!--Xamarin.UWP-->
-        <file src="Vibrancy.Forms\Vibrancy.Forms.UWP\bin\Release\Vibrancy.Forms.UWP.dll" target="lib\uap10.0.16299\Vibrancy.Forms.UWP.dll" />
-        <file src="Vibrancy.Forms\Vibrancy.Forms.UWP\bin\Release\Vibrancy.Forms.UWP.pdb" target="lib\uap10.0.16299\Vibrancy.Forms.UWP.pdb" />
-        <file src="Vibrancy.Forms\Vibrancy.Forms.UWP\bin\Release\Vibrancy.Forms.dll" target="lib\uap10.0.16299\Vibrancy.Forms.dll" />
-        <file src="Vibrancy.Forms\Vibrancy.Forms.UWP\bin\Release\Vibrancy.Forms.pdb" target="lib\uap10.0.16299\Vibrancy.Forms.pdb" />
-
+<!-- 
+        <file src="Vibrancy.Forms.UWP\bin\Release\Vibrancy.Forms.UWP.dll" target="lib\uap10.0.16299\Vibrancy.Forms.UWP.dll" />
+        <file src="Vibrancy.Forms.UWP\bin\Release\Vibrancy.Forms.UWP.pdb" target="lib\uap10.0.16299\Vibrancy.Forms.UWP.pdb" />
+        <file src="Vibrancy.Forms.UWP\bin\Release\Vibrancy.Forms.dll" target="lib\uap10.0.16299\Vibrancy.Forms.dll" />
+        <file src="Vibrancy.Forms.UWP\bin\Release\Vibrancy.Forms.pdb" target="lib\uap10.0.16299\Vibrancy.Forms.pdb" />
+ -->
 
         <!--Icon-->
         <file src="docs\Vibrancy.Forms.png" target="images\" />

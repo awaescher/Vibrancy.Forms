@@ -135,10 +135,6 @@
       <Project>{29B1C798-02D7-4732-ACC5-0FD2E4BBEC8B}</Project>
       <Name>Vibrancy.Forms.iOS</Name>
     </ProjectReference>
-    <ProjectReference Include="..\VibrancyApp\VibrancyApp.csproj">
-      <Project>{54EC79C0-3B75-4A94-98C0-EA887CD4B53E}</Project>
-      <Name>VibrancyApp</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
