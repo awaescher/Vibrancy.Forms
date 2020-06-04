@@ -49,5 +49,20 @@ xmlns:vf="clr-namespace:Vibrancy.Forms;assembly=Vibrancy.Forms"
 
 Note that the BlurStyles `Regular` and `Prominent` will automatically adapt to the system theme (light or dark) - this is true for the Vibrancy effect as well. If you choose another BlurStyle like `ExtraLight` or `ExtraDark`, you'll have to adjust these manually.
 
+# iOS / iPadOS only
 
-![Banner](https://raw.githubusercontent.com/awaescher/Vibrancy.Forms/master/docs/Vibrancy.Forms.png)
+Despite being a Xamarin.Forms plugin, Vibrancy.Forms is not cross-platform. It is designed for iOS and iPadOS only.
+
+### Why?
+While blur effects can be achieved on all major platforms, vibrancy effects are "Apple-only". I started this project because I wanted to have both, blur and vibrancy effects on my iOS and iPadOS apps. However, vibrancy was not provided by any existing plugin. 
+
+This means I am done at this point. I do not plan to implement other platforms. I won't reinvent existing cross-platform plugins.
+
+So if you want to have beautiful cross-platform blurs, I highly recommend using [Sharpnado.MaterialFrame](https://github.com/roubachof/Sharpnado.MaterialFrame) by [Jean-Marie Alfonsi](https://github.com/roubachof). But you'll have to live without vibrancy effects then.
+
+### Why Xamarin.Forms for "Apple-only"?
+Xamarin.Forms really is an awesome cross-platform solution. But even if you're lucky enough to skip Android and UWP and go for iOS and iPadOS only, Xamarin.Forms is still a very attractive option, becaue you can make use of high level abstractions like the ListView or the Shell navigation without going too deep into UIKit and friends. 
+
+---
+
+Special thanks once again to our friends at <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> for the awesome package icon.

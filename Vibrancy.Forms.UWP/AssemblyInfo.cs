@@ -13,7 +13,7 @@
 [assembly: System.Reflection.AssemblyDescription("Blur and Vibrancy effects for iOS and iPadOS with Xamarin.Forms")]
 [assembly: System.Reflection.AssemblyProduct("Vibrancy.Forms")]
 [assembly: System.Reflection.AssemblyCopyright("Copyright © Andreas Wäscher 2020")]
-[assembly: System.Reflection.AssemblyVersion("0.1")]
-[assembly: System.Reflection.AssemblyFileVersion("0.1")]
+[assembly: System.Reflection.AssemblyVersion("1.0.5")]
+[assembly: System.Reflection.AssemblyFileVersion("1.0.5")]
 
 
