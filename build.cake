@@ -52,13 +52,11 @@ Task("Build")
 });
 
 Task("Pack")
-	//.IsDependentOn("Build")
+	.IsDependentOn("Build")
 	.Does(() =>
 {
     if(!DirectoryExists(buildDirectory.FullPath))
-    {
         CreateDirectory(buildDirectory.FullPath);
-    }
 
     var nuspecFiles = GetFiles("**/*.nuspec");
     foreach(var nuspec in nuspecFiles)
