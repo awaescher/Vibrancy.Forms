@@ -6,7 +6,7 @@
 # Installation
 
 - Install the NuGet package `Vibrancy.Forms` to your projects: The shared project and the platform projects.
-- Head over to your `AppDelegate.cs` in your iOS project and initiaize Vibrancy.Forms in the method `FinishedLaunching()`.
+- Head over to your `AppDelegate.cs` in your iOS project and initialize Vibrancy.Forms in the method `FinishedLaunching()`.
 
 ```
 ...
@@ -26,7 +26,7 @@ LoadApplication(new App());
 xmlns:vf="clr-namespace:Vibrancy.Forms;assembly=Vibrancy.Forms"
 ```
 
-- Now, you can use the BlurView like any other view.
+- Once this is done, you can use the BlurView like any other view.
 
 ```
 <vf:BlurView>
@@ -35,7 +35,7 @@ xmlns:vf="clr-namespace:Vibrancy.Forms;assembly=Vibrancy.Forms"
     </StackLayout>
 </vf:BlurView>
 ```
- > The BlurView needs to have exactly one content view.
+ > ⚠️ The BlurView needs to have exactly one child view.
 
 - Customize the BlurStyle and the Vibrancy effect as you like.
 
@@ -54,7 +54,7 @@ Note that the BlurStyles `Regular` and `Prominent` will automatically adapt to t
 Despite being a Xamarin.Forms plugin, Vibrancy.Forms is not cross-platform. It is designed for iOS and iPadOS only.
 
 ### Why?
-While blur effects can be achieved on all major platforms, vibrancy effects are "Apple-only". I started this project because I wanted to have both, blur and vibrancy effects on my iOS and iPadOS apps. However, vibrancy was not provided by any existing plugin. 
+While blur effects can be achieved on all major platforms, vibrancy effects are "Apple-only". I started this project because I wanted to have both, blur and vibrancy effects in my iOS and iPadOS apps. However, vibrancy was not provided by any existing plugin. 
 
 This means I am done at this point. I do not plan to implement other platforms. I won't reinvent existing cross-platform plugins.
 
