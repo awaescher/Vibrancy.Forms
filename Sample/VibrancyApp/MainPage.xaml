@@ -24,10 +24,6 @@
 					Aspect="AspectFill">
 				</Image>
 				<Image
-					Source="{app:ImageResource VibrancyApp.Resources.test0.jpeg}"
-					Aspect="AspectFill">
-				</Image>
-				<Image
 					Source="{app:ImageResource VibrancyApp.Resources.test1.jpeg}"
 					Aspect="AspectFill">
 				</Image>
@@ -48,33 +44,32 @@
 		<vf:BlurView
 			x:Name="vib"
 			BlurStyle="Regular"
-			EnableVibrancy="True"
+			EnableVibrancy="False"
 			Grid.Row="1">
 			<StackLayout>
-				<Frame
-					HeightRequest="256"
-					BackgroundColor="Transparent"
+				<Label
+					Text="Vibrancy.Forms"
+					FontSize="Title"
 					HorizontalOptions="Center"
-					VerticalOptions="Center"
-					Margin="0,44,0,0"
-				Padding="1"
-					CornerRadius="0"
-					BorderColor="White"
-					HasShadow="False"
-					WidthRequest="256">
-					<Frame
-						BackgroundColor="Transparent"
-						CornerRadius="0"
-						BorderColor="White"
-						HasShadow="False">
-						<Label
-							Text="♥︎"
-							FontSize="200"
-							VerticalOptions="FillAndExpand"
-							HorizontalOptions="Center"
-							VerticalTextAlignment="Center" />
-					</Frame>
-				</Frame>
+					VerticalOptions="FillAndExpand"
+					VerticalTextAlignment="End" />
+				<Label
+					Text="made with ♥︎ by @waescher"
+					FontSize="Large"
+					VerticalOptions="FillAndExpand"
+					HorizontalOptions="Center"
+					VerticalTextAlignment="Start" />
+				<StackLayout
+					HorizontalOptions="Center"
+					Padding="0, 0, 0, 44"
+					Orientation="Horizontal">
+					<Label
+						Text="Enable vibrancy"
+						VerticalOptions="Center" />
+					<Switch
+						HorizontalOptions="Center"
+						IsToggled="{Binding Source={x:Reference vib}, Path=EnableVibrancy}" />
+				</StackLayout>
 			</StackLayout>
 		</vf:BlurView>
 	</Grid>
