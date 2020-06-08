@@ -25,7 +25,6 @@ namespace Vibrancy.Forms.iOS.Renderers
 
 		protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
 		{
-			System.Console.WriteLine(e.PropertyName);
 			switch (e.PropertyName)
 			{
 				case nameof(BlurView.BlurStyle):
