@@ -88,5 +88,11 @@
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VibrancyApp\VibrancyApp.csproj">
+      <Project>{54EC79C0-3B75-4A94-98C0-EA887CD4B53E}</Project>
+      <Name>VibrancyApp</Name>
+    </ProjectReference>
+  </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
