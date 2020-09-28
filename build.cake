@@ -69,7 +69,7 @@ Task("Pack")
             BasePath = wd,
         };
 		// TODO: does not work: XmlPeek says 'Failed to find node matching the XPath'
-		//		 and replaces the description text (see Vibrancy.Forms as well)
+		//		 and replaces the description text (see FluentDragDrop as well)
 		//f(args.AddCommitToDescription)
 		//{
 		//	// Extract description from nuspec and concat current commit hash and datetime
