@@ -68,16 +68,17 @@ Task("Pack")
             OutputDirectory = buildDirectory.FullPath,
             BasePath = wd,
         };
-
-		if(args.AddCommitToDescription)
-		{
-			// Extract description from nuspec and concat current commit hash and datetime
-			var description = XmlPeek(nuspec, $"/package/metadata/description");
-			var lastCommit = GitLogTip(args.RepositoryPath);
-			description = $"{description}\n\nCommit : {lastCommit.Sha}, {lastCommit.Author?.When}";
-			Information($"Updated package description : {description}");
-			settings.Description = description;
-		}
+		// TODO: does not work: XmlPeek says 'Failed to find node matching the XPath'
+		//		 and replaces the description text (see Vibrancy.Forms as well)
+		//f(args.AddCommitToDescription)
+		//{
+		//	// Extract description from nuspec and concat current commit hash and datetime
+		//	var description = XmlPeek(nuspec, $"/package/metadata/description");
+		//	var lastCommit = GitLogTip(args.RepositoryPath);
+		//	description = $"{description}\n\nCommit : {lastCommit.Sha}, {lastCommit.Author?.When}";
+		//	Information($"Updated package description : {description}");
+		//	settings.Description = description;
+		//}
 
         NuGetPack(nuspec, settings);
     }
